@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#AddBack" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: LightSlateGray;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminHomeController">
+   <children>
+      <TableView layoutX="223.0" layoutY="56.0" prefHeight="235.0" prefWidth="554.0" scaleShape="false" style="-fx-background-color: #C9C0BB;">
+        <columns>
+          <TableColumn prefWidth="107.0" text="Name" />
+          <TableColumn prefWidth="69.0" text="Id" />
+            <TableColumn prefWidth="73.0" text="Quantity" />
+            <TableColumn prefWidth="74.0" text="Price" />
+            <TableColumn prefWidth="97.0" text="Date" />
+            <TableColumn prefWidth="132.0" text="Category" />
+        </columns>
+      </TableView>
+      <Button alignment="CENTER" layoutX="609.0" layoutY="318.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #c9dfc9;" text="Remove">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="329.0" layoutY="318.0" mnemonicParsing="false" onAction="#AddItem" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #c9dfc9;" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font></Button>
+      <AnchorPane layoutX="14.0" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #4863A0;">
+         <children>
+            <AnchorPane layoutY="56.0" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #6a5acd;">
+               <children>
+                  <Text fill="#f8f8f8" layoutX="50.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="113.58984375">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="343.0" mnemonicParsing="false" onAction="#AddBack" prefHeight="36.0" prefWidth="77.0" style="-fx-background-color: #c9dfc9;" text="Back">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="124.0" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: c9dfc9;" text="FoodItem">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="170.0" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: #c9dfc9;" text="Clothing">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="215.0" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: #c9dfc9;" text="Electronics">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="394.0" layoutY="14.0" prefHeight="30.0" prefWidth="198.0" text="Admin Panel" textFill="#00ff5c">
+         <font>
+            <Font name="Verdana Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Line endX="266.0" layoutX="450.0" layoutY="44.0" startX="-166.0" stroke="#e1d6d6" strokeWidth="2.0" />
+      <Label alignment="CENTER" layoutX="375.0" layoutY="371.0" prefHeight="30.0" prefWidth="252.0" text="Md. Asif Hassan | © All Rights Reserved" textFill="#fffefe">
+         <font>
+            <Font name="Verdana Bold" size="10.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Line endX="264.0" layoutX="457.0" layoutY="299.0" startX="-177.0" stroke="#e1d6d6" strokeWidth="2.0" />
+   </children>
+</Pane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: LightSlateGray;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CarTController">
+   <children>
+      <Button layoutX="38.0" layoutY="224.0" mnemonicParsing="false" onAction="#AddBack" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: #c9dfc9;" text="Back">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button layoutX="342.0" layoutY="122.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: #c9dfc9;" text="Confirm">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <TextField layoutX="164.0" layoutY="60.0" prefHeight="31.0" prefWidth="178.0" promptText="MRP" style="-fx-background-color: #F3E3C3;">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font></TextField>
+      <CheckBox layoutX="238.0" layoutY="122.0" mnemonicParsing="false" text="Cash" textFill="#11ff00">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="238.0" layoutY="153.0" mnemonicParsing="false" text="Card" textFill="#00ff09">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <Text fill="#00ff09" layoutX="184.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cart Payment">
+         <font>
+            <Font name="Verdana Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField layoutX="55.0" layoutY="60.0" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #F3E3C3;" text="Total Price">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="55.0" layoutY="122.0" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: #F3E3C3;" text="Payment Gateway">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Line endX="229.0" layoutX="207.0" layoutY="49.0" startX="-143.0" stroke="#00ffa7" strokeWidth="2.0" />
+      <Label alignment="CENTER" layoutX="127.0" layoutY="263.0" prefHeight="30.0" prefWidth="252.0" text="Md. Asif Hassan | © All Rights Reserved" textFill="#fffefe">
+         <font>
+            <Font name="Verdana Bold" size="10.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+   </children>
+</Pane>

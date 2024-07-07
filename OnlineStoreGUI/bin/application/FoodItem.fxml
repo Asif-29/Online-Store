@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="550.0" style="-fx-background-color: LightSlateGray;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FoodItemController">
+   <children>
+      <Button alignment="CENTER" layoutX="36.0" layoutY="255.0" mnemonicParsing="false" onAction="#AddBack" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #c9dfc9;" text="Back">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button alignment="CENTER" layoutX="339.0" layoutY="256.0" mnemonicParsing="false" onAction="#AddCarT" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #c9dfc9;" text="Add Cart">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Label layoutX="124.0" layoutY="56.0" prefHeight="30.0" prefWidth="79.0" text="Name" textFill="#bfff00">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="86.0" prefHeight="30.0" prefWidth="79.0" text="Id" textFill="#bfff00">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="219.0" layoutY="57.0" prefHeight="28.0" prefWidth="237.0">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font></TextField>
+      <TextField layoutX="219.0" layoutY="87.0" prefHeight="28.0" prefWidth="237.0">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font></TextField>
+      <Label layoutX="118.0" layoutY="121.0" prefHeight="30.0" prefWidth="79.0" text="Category" textFill="#00ff76">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="157.0" prefHeight="30.0" prefWidth="79.0" text="Quantity" textFill="#bfff00">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="185.0" prefHeight="30.0" prefWidth="79.0" text="Price" textFill="#bfff00">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="219.0" layoutY="122.0" prefHeight="28.0" prefWidth="237.0" promptText=" Food Item" style="-fx-background-color: #E0FFFF;">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font></TextField>
+      <TextField layoutX="219.0" layoutY="154.0" prefHeight="17.0" prefWidth="237.0">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font></TextField>
+      <TextField layoutX="219.0" layoutY="186.0" prefHeight="28.0" prefWidth="237.0">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font></TextField>
+      <Label layoutX="118.0" layoutY="215.0" prefHeight="30.0" prefWidth="79.0" text="Date" textFill="#bfff00">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="219.0" layoutY="216.0" prefHeight="28.0" prefWidth="237.0">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="197.0" layoutY="14.0" prefHeight="30.0" prefWidth="188.0" text="Food Item" textFill="#d9ff00">
+         <font>
+            <Font name="Verdana Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="452.0" endY="44.0" startX="152.0" startY="44.0" stroke="#00f2ff" />
+   </children>
+</Pane>
